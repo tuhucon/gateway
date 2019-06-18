@@ -9,6 +9,7 @@ com/example/grpc/server/service/StreamServiceOuterClass.class
 com/example/grpc/server/service/StreamServiceGrpc$StreamServiceImplBase.class
 com/example/grpc/server/service/StreamServiceGrpc$StreamServiceBaseDescriptorSupplier.class
 com/example/grpc/server/service/StreamServiceGrpc$StreamServiceMethodDescriptorSupplier.class
+com/example/gateway/HttpServerService.class
 com/example/grpc/server/message/Person$Builder.class
 com/example/grpc/server/message/ServerStreamResponseOrBuilder.class
 com/example/grpc/server/message/BidirectionStreamResponse$1.class
@@ -23,7 +24,9 @@ com/example/grpc/server/message/ServerStreamResponse.class
 com/example/grpc/server/service/HelloServiceGrpc$HelloServiceBlockingStub.class
 com/example/gateway/GatewayApplication.class
 com/example/grpc/server/message/Person$1.class
+com/example/gateway/Person$PersonBuilder.class
 com/example/grpc/server/message/ServerStreamRequestOrBuilder.class
+com/example/gateway/HttpServerInterface.class
 com/example/grpc/server/message/HelloRequest$Builder.class
 com/example/grpc/server/message/ServerStreamRequest$Builder.class
 com/example/grpc/server/message/ClientStreamResponse$Builder.class
@@ -51,6 +54,7 @@ com/example/grpc/server/service/StreamServiceGrpc$StreamServiceBlockingStub.clas
 com/example/grpc/server/message/BidirectionStreamRequestOrBuilder.class
 com/example/grpc/server/service/StreamServiceGrpc$1.class
 com/example/grpc/server/service/HelloServiceGrpc$1.class
+com/example/gateway/Person.class
 com/example/grpc/server/message/BidirectionStreamRequest$1.class
 com/example/grpc/server/service/HelloServiceGrpc$MethodHandlers.class
 com/example/grpc/server/message/ServerStreamRequest$1.class

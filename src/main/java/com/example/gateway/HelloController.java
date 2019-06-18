@@ -9,12 +9,25 @@ import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
+
 @RestController
 @AllArgsConstructor
 public class HelloController {
 
     private HelloServiceBlockingStub helloBlockingStub;
     private ManagedChannel channel;
+    private HttpServerService httpServerService;
+
+    @GetMapping("/hellox-http")
+    public String helloxHttp() throws IOException {
+        return httpServerService.hellox().firstName;
+    }
+
+    @GetMapping("/helloy-http")
+    public String helloyHttp() throws IOException {
+        return httpServerService.helloy(createPerson()).firstName;
+    }
 
     @GetMapping("/hellox")
     public String hellox() {
@@ -36,6 +49,23 @@ public class HelloController {
     public String helloyNew() {
         HelloServiceBlockingStub blockingStub = HelloServiceGrpc.newBlockingStub(channel);
         return blockingStub.helloy(newPerson()).getFirstName();
+    }
+
+    private com.example.gateway.Person createPerson() {
+        return com.example.gateway.Person.builder()
+                .firstName("bim")
+                .lastName("bip")
+                .age(40)
+                .address("hung yen viet nam")
+                .city("hung yen")
+                .country("viet nam")
+                .wifeFirstName("da")
+                .wifeLastName("da")
+                .wifeAge(36)
+                .wifeAddress("hung yen viet nam")
+                .wifeCity("hung yen")
+                .wifeCountry("viet name")
+                .build();
     }
 
     private Person newPerson() {

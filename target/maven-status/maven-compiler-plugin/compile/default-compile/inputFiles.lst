@@ -2,6 +2,7 @@
 /Users/lap01171/IdeaProjects/gateway/target/generated-sources/protobuf/java/com/example/grpc/server/message/HelloResponseOrBuilder.java
 /Users/lap01171/IdeaProjects/gateway/target/generated-sources/protobuf/java/com/example/grpc/server/message/HelloResponse.java
 /Users/lap01171/IdeaProjects/gateway/target/generated-sources/protobuf/java/com/example/grpc/server/message/HelloMessage.java
+/Users/lap01171/IdeaProjects/gateway/src/main/java/com/example/gateway/HttpServerService.java
 /Users/lap01171/IdeaProjects/gateway/target/generated-sources/protobuf/grpc-java/com/example/grpc/server/service/HelloServiceGrpc.java
 /Users/lap01171/IdeaProjects/gateway/target/generated-sources/protobuf/java/com/example/grpc/server/message/BidirectionStreamResponse.java
 /Users/lap01171/IdeaProjects/gateway/target/generated-sources/protobuf/java/com/example/grpc/server/message/ServerStreamRequestOrBuilder.java
@@ -22,5 +23,7 @@
 /Users/lap01171/IdeaProjects/gateway/target/generated-sources/protobuf/java/com/example/grpc/server/message/ServerStreamRequest.java
 /Users/lap01171/IdeaProjects/gateway/target/generated-sources/protobuf/java/com/example/grpc/server/message/ServerStreamResponse.java
 /Users/lap01171/IdeaProjects/gateway/target/generated-sources/protobuf/java/com/example/grpc/server/message/ClientStreamRequestOrBuilder.java
+/Users/lap01171/IdeaProjects/gateway/src/main/java/com/example/gateway/HttpServerInterface.java
+/Users/lap01171/IdeaProjects/gateway/src/main/java/com/example/gateway/Person.java
 /Users/lap01171/IdeaProjects/gateway/target/generated-sources/protobuf/java/com/example/grpc/server/message/ClientStreamRequest.java
 /Users/lap01171/IdeaProjects/gateway/target/generated-sources/protobuf/java/com/example/grpc/server/message/BidirectionStreamRequestOrBuilder.java
