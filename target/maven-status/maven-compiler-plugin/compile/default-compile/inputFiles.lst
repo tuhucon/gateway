@@ -27,3 +27,4 @@
 /Users/lap01171/IdeaProjects/gateway/src/main/java/com/example/gateway/Person.java
 /Users/lap01171/IdeaProjects/gateway/target/generated-sources/protobuf/java/com/example/grpc/server/message/ClientStreamRequest.java
 /Users/lap01171/IdeaProjects/gateway/target/generated-sources/protobuf/java/com/example/grpc/server/message/BidirectionStreamRequestOrBuilder.java
+/Users/lap01171/IdeaProjects/gateway/src/main/java/com/example/gateway/HttpClientService.java
