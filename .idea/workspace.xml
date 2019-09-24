@@ -1,9 +1,593 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18690ec5-97fd-4b79-b6cc-b636bbe2f5d3" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/classes/" />
-    <ignored path="$PROJECT_DIR$/target/" />
+    <list default="true" id="18690ec5-97fd-4b79-b6cc-b636bbe2f5d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gateway/HttpClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/example/example.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/example/example_parser_configuration.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/example/feature.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/allocation_description.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/api_def.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/attr_value.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/cost_graph.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/device_attributes.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/function.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/graph.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/graph_transfer_info.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/iterator.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/kernel_def.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/log_memory.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/node_def.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/op_def.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/reader_base.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/remote_fused_graph_execute_info.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/resource_handle.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/step_stats.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/summary.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/tensor.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/tensor_description.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/tensor_shape.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/tensor_slice.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/types.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/variable.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/framework/versions.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/lib/core/error_codes.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/checkpointable_object_graph.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/cluster.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/config.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/control_flow.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/critical_section.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/debug.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/device_properties.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/eager_service.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/master.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/master_service.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/meta_graph.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/named_tensor.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/queue_runner.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/replay_log.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/rewriter_config.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/saved_model.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/saver.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/tensor_bundle.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/tensorflow_server.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/transport_options.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/worker.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow/core/protobuf/worker_service.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/apis/classification.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/apis/get_model_metadata.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/apis/get_model_status.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/apis/inference.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/apis/input.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/apis/internal/serialized_input.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/apis/model.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/apis/model_management.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/apis/model_service.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/apis/predict.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/apis/prediction_log.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/apis/prediction_service.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/apis/regression.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/apis/session_service.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/config/log_collector_config.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/config/logging_config.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/config/model_server_config.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/config/monitoring_config.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/config/platform_config.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/config/ssl_config.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/core/logging.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/core/test_util/fake_loader_source_adapter.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/model_servers/test_util/storage_path_error_injecting_source_adapter.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/resources/resources.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/servables/hashmap/hashmap_source_adapter.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/servables/tensorflow/saved_model_bundle_source_adapter.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/servables/tensorflow/session_bundle_config.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/servables/tensorflow/session_bundle_source_adapter.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/sources/storage_path/file_system_storage_path_source.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/sources/storage_path/static_storage_path_source.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/util/class_registration_test.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/tensorflow_serving/util/status.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/org/tensorflow/distruntime/MasterServiceGrpc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/org/tensorflow/distruntime/WorkerServiceGrpc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/tensorflow/eager/EagerServiceGrpc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/tensorflow/serving/ModelServiceGrpc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/tensorflow/serving/PredictionServiceGrpc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/tensorflow/serving/SessionServiceGrpc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CleanupAllRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CleanupAllRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CleanupAllResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CleanupAllResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CleanupGraphRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CleanupGraphRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CleanupGraphResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CleanupGraphResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CloseSessionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CloseSessionRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CloseSessionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CloseSessionResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ClusterDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ClusterDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ClusterProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CompleteGroupRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CompleteGroupRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CompleteGroupResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CompleteGroupResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CompleteInstanceRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CompleteInstanceRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CompleteInstanceResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CompleteInstanceResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CreateSessionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CreateSessionRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CreateSessionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CreateSessionResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CreateWorkerSessionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CreateWorkerSessionRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CreateWorkerSessionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/CreateWorkerSessionResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/DeleteWorkerSessionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/DeleteWorkerSessionRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/DeleteWorkerSessionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/DeleteWorkerSessionResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/DeregisterGraphRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/DeregisterGraphRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/DeregisterGraphResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/DeregisterGraphResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/DistributedRuntimeProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ExecutorOpts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ExecutorOptsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ExtendSessionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ExtendSessionRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ExtendSessionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ExtendSessionResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/GetStatusRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/GetStatusRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/GetStatusResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/GetStatusResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/GetStepSequenceRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/GetStepSequenceRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/GetStepSequenceResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/GetStepSequenceResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/JobDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/JobDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/LabeledStepStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/LabeledStepStatsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ListDevicesRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ListDevicesRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ListDevicesResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ListDevicesResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/LoggingRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/LoggingRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/LoggingResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/LoggingResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/MakeCallableRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/MakeCallableRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/MakeCallableResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/MakeCallableResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/MasterServiceProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/PartialRunSetupRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/PartialRunSetupRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/PartialRunSetupResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/PartialRunSetupResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RecvBufRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RecvBufRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RecvBufResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RecvBufResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RecvTensorRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RecvTensorRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RecvTensorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RecvTensorResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RegisterGraphRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RegisterGraphRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RegisterGraphResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RegisterGraphResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ReleaseCallableRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ReleaseCallableRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ReleaseCallableResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ReleaseCallableResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ResetRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ResetRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ResetResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ResetResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RunCallableRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RunCallableRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RunCallableResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RunCallableResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RunGraphRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RunGraphRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RunGraphResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RunGraphResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RunStepRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RunStepRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RunStepResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/RunStepResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ServerDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ServerDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/ServerProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/StepSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/StepSequenceOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/TraceOpts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/TraceOptsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/TracingRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/TracingRequestOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/TracingResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/TracingResponseOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/WorkerProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/distruntime/WorkerServiceProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/BytesList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/BytesListOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/ExampleOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/ExampleParserConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/ExampleParserConfigurationOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/ExampleParserConfigurationProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/ExampleProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/Feature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/FeatureConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/FeatureConfigurationOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/FeatureList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/FeatureListOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/FeatureLists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/FeatureListsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/FeatureOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/FeatureProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/Features.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/FeaturesOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/FixedLenFeatureProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/FixedLenFeatureProtoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/FloatList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/FloatListOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/Int64List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/Int64ListOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/SequenceExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/SequenceExampleOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/VarLenFeatureProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/example/VarLenFeatureProtoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/AllocationDescription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/AllocationDescriptionOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/AllocationDescriptionProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/AllocationRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/AllocationRecordOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/AllocatorMemoryUsed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/AllocatorMemoryUsedOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ApiDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ApiDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ApiDefProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ApiDefs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ApiDefsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/AssetFileDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/AssetFileDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/AttrValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/AttrValueOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/AttrValueProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/AutoParallelOptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/AutoParallelOptionsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/CallableOptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/CallableOptionsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/Code.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/CollectionDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/CollectionDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/CondContextDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/CondContextDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ConfigProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ConfigProtoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ConfigProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ControlFlowContextDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ControlFlowContextDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ControlFlowProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/CostGraphDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/CostGraphDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/CostGraphProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/CriticalSectionDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/CriticalSectionDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/CriticalSectionExecutionDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/CriticalSectionExecutionDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/CriticalSectionProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/DataType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/DebugOptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/DebugOptionsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/DebugProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/DebugTensorWatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/DebugTensorWatchOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/DebuggedSourceFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/DebuggedSourceFileOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/DebuggedSourceFiles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/DebuggedSourceFilesOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/DeviceAttributes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/DeviceAttributesOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/DeviceAttributesProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/DeviceLocality.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/DeviceLocalityOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/DeviceStepStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/DeviceStepStatsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ErrorCodesProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/FunctionDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/FunctionDefLibrary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/FunctionDefLibraryOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/FunctionDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/FunctionProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GPUOptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GPUOptionsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GradientDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GradientDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphOptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphOptionsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphTransferConstNodeInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphTransferConstNodeInfoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphTransferGraphInputNodeInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphTransferGraphInputNodeInfoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphTransferGraphOutputNodeInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphTransferGraphOutputNodeInfoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphTransferInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphTransferInfoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphTransferInfoProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphTransferNodeInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphTransferNodeInfoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphTransferNodeInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphTransferNodeInputInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphTransferNodeInputInfoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphTransferNodeInputOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphTransferNodeOutputInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/GraphTransferNodeOutputInfoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/HistogramProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/HistogramProtoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/InterconnectLink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/InterconnectLinkOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/KernelDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/KernelDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/KernelDefProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/KernelList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/KernelListOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/LocalLinks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/LocalLinksOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/LogMemoryProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/MemoryLogRawAllocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/MemoryLogRawAllocationOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/MemoryLogRawDeallocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/MemoryLogRawDeallocationOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/MemoryLogStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/MemoryLogStepOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/MemoryLogTensorAllocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/MemoryLogTensorAllocationOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/MemoryLogTensorDeallocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/MemoryLogTensorDeallocationOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/MemoryLogTensorOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/MemoryLogTensorOutputOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/MemoryStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/MemoryStatsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/MetaGraphDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/MetaGraphDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/MetaGraphProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/NameAttrList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/NameAttrListOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/NamedTensorProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/NamedTensorProtoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/NamedTensorProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/NodeDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/NodeDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/NodeExecStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/NodeExecStatsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/NodeOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/NodeOutputOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/NodeProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/OpDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/OpDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/OpDefProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/OpDeprecation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/OpDeprecationOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/OpList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/OpListOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/OptimizerOptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/OptimizerOptionsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/QueueRunnerDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/QueueRunnerDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/QueueRunnerProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/RPCOptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/RPCOptionsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ReaderBaseProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ReaderBaseState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ReaderBaseStateOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/RemoteFusedGraphExecuteInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/RemoteFusedGraphExecuteInfoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/RemoteFusedGraphExecuteInfoProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ResourceHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ResourceHandleProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ResourceHandleProtoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/RewriterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/RewriterConfigOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/RewriterConfigProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/RunMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/RunMetadataOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/RunOptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/RunOptionsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/SaveSliceInfoDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/SaveSliceInfoDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/SavedModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/SavedModelOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/SavedModelProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ScopedAllocatorOptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ScopedAllocatorOptionsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/SignatureDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/SignatureDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/StepStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/StepStatsOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/StepStatsProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/Summary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/SummaryDescription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/SummaryDescriptionOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/SummaryMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/SummaryMetadataOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/SummaryOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/SummaryProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/TensorConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/TensorConnectionOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/TensorDescription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/TensorDescriptionOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/TensorDescriptionProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/TensorInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/TensorInfoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/TensorProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/TensorProtoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/TensorProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/TensorShapeProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/TensorShapeProtoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/TensorShapeProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/TensorSliceProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/TensorSliceProtoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/TensorSliceProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ThreadPoolOptionProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ThreadPoolOptionProtoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/TypesProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ValuesDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/ValuesDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/VariableDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/VariableDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/VariableProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/VariantTensorDataProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/VariantTensorDataProtoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/VersionDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/VersionDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/VersionsProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/WhileContextDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/framework/WhileContextDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/util/BundleEntryProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/util/BundleEntryProtoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/util/BundleHeaderProto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/util/BundleHeaderProtoOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/util/IteratorProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/util/IteratorStateMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/util/IteratorStateMetadataOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/util/SaverDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/util/SaverDefOrBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/util/SaverProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/org/tensorflow/util/TensorBundleProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/CheckpointableObjectGraphOuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/DevicePropertiesProtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/ReplayLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/TransportOptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/eager/EagerServiceOuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/ClassRegistrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/Classification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/FileSystemStoragePathSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/GetModelMetadata.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/GetModelStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/HashmapSourceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/Inference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/InputOuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/LogCollectorConfigOuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/Logging.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/LoggingConfigOuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/ModelManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/ModelServerConfigOuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/ModelServiceOuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/MonitoringConfigOuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/PlatformConfigOuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/Predict.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/PredictionLogOuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/PredictionServiceOuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/RegressionOuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/Resources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/SavedModelBundleSourceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/SessionBundleConfigOuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/SessionBundleSourceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/SessionServiceOuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/SslConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/StaticStoragePathSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/internal/SerializedInputOuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/test_util/FakeLoaderSourceAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/tensorflow/serving/test_util/StoragePathErrorInjectingSourceAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gateway/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gateway/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gateway/GatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gateway/GatewayApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gateway/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gateway/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gateway/HttpServerInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gateway/HttpServerInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gateway/HttpServerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gateway/HttpServerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gateway/Person$PersonBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gateway/Person$PersonBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gateway/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gateway/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/BidirectionStreamRequest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/BidirectionStreamRequest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/BidirectionStreamRequest$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/BidirectionStreamRequest$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/BidirectionStreamRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/BidirectionStreamRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/BidirectionStreamRequestOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/BidirectionStreamRequestOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/BidirectionStreamResponse$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/BidirectionStreamResponse$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/BidirectionStreamResponse$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/BidirectionStreamResponse$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/BidirectionStreamResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/BidirectionStreamResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/BidirectionStreamResponseOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/BidirectionStreamResponseOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ClientStreamRequest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ClientStreamRequest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ClientStreamRequest$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ClientStreamRequest$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ClientStreamRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ClientStreamRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ClientStreamRequestOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ClientStreamRequestOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ClientStreamResponse$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ClientStreamResponse$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ClientStreamResponse$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ClientStreamResponse$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ClientStreamResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ClientStreamResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ClientStreamResponseOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ClientStreamResponseOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloMessage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloMessage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloRequest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloRequest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloRequest$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloRequest$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloRequestOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloRequestOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloResponse$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloResponse$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloResponse$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloResponse$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloResponseOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/HelloResponseOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/Person$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/Person$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/Person$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/Person$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/PersonOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/PersonOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ServerStreamRequest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ServerStreamRequest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ServerStreamRequest$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ServerStreamRequest$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ServerStreamRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ServerStreamRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ServerStreamRequestOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ServerStreamRequestOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ServerStreamResponse$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ServerStreamResponse$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ServerStreamResponse$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ServerStreamResponse$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ServerStreamResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ServerStreamResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ServerStreamResponseOrBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/ServerStreamResponseOrBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/StreamMessage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/StreamMessage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/StreamMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/message/StreamMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc$HelloServiceBaseDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc$HelloServiceBaseDescriptorSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc$HelloServiceBlockingStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc$HelloServiceBlockingStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc$HelloServiceFileDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc$HelloServiceFileDescriptorSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc$HelloServiceFutureStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc$HelloServiceFutureStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc$HelloServiceImplBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc$HelloServiceImplBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc$HelloServiceMethodDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc$HelloServiceMethodDescriptorSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc$HelloServiceStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc$HelloServiceStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc$MethodHandlers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc$MethodHandlers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceGrpc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceOuterClass$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceOuterClass$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceOuterClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/HelloServiceOuterClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc$MethodHandlers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc$MethodHandlers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc$StreamServiceBaseDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc$StreamServiceBaseDescriptorSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc$StreamServiceBlockingStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc$StreamServiceBlockingStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc$StreamServiceFileDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc$StreamServiceFileDescriptorSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc$StreamServiceFutureStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc$StreamServiceFutureStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc$StreamServiceImplBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc$StreamServiceImplBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc$StreamServiceMethodDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc$StreamServiceMethodDescriptorSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc$StreamServiceStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc$StreamServiceStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceGrpc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceOuterClass$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceOuterClass$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceOuterClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/grpc/server/service/StreamServiceOuterClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/message/hello/HelloMessage.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/message/stream/StreamMessage.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/HelloService.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/StreamService.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gateway-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/gateway-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/gateway-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.gateway.GatewayApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.gateway.GatewayApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.gateway.GatewayApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.gateway.GatewayApplicationTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/gateway/GatewayApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/example/gateway/GatewayApplicationTests.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,112 +596,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/gateway/Person.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/gateway/HttpServerInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/com/example/grpc/server/service/HelloServiceOuterClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/gateway/HttpServerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/retrofit/2.6.0/retrofit-2.6.0.jar!/retrofit2/Retrofit.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/proto/message/hello/HelloMessage.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/com/example/grpc/server/message/Person.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="1757" column="78" selection-start-line="1757" selection-start-column="78" selection-end-line="1757" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/com/example/grpc/server/message/PersonOrBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/gateway/HelloController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -130,19 +608,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/example/gateway/GatewayApplication.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/gateway/HttpServerInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/gateway/HelloController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/gateway/HttpServerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/gateway/Person.java" />
-      </list>
-    </option>
-  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -150,155 +615,12 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="gateway" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="proto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="proto" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="proto" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-              <item name="hello" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
-              <item name="grpc-java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
-              <item name="grpc-java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="message" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectId" id="1PJaobKsNjVrcxLZYTZep6FubQw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -306,10 +628,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/proto" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -318,6 +643,7 @@
       <recent name="com.example.gateway" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/proto" />
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
@@ -354,176 +680,58 @@
       <updated>1560844000036</updated>
       <workItem from="1560844003285" duration="1596000" />
       <workItem from="1560847882222" duration="2670000" />
+      <workItem from="1560912503150" duration="889000" />
+      <workItem from="1560932574511" duration="17000" />
+      <workItem from="1565594830561" duration="1291000" />
+      <workItem from="1568803460980" duration="103000" />
+      <workItem from="1568803600930" duration="57000" />
+      <workItem from="1568878869371" duration="278000" />
+      <workItem from="1569214504118" duration="11269000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4266000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.46506023" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.35180724" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32891566" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.3297568" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/com/example/grpc/server/service/HelloServiceGrpc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/3.7.1/protobuf-java-3.7.1.jar!/com/google/protobuf/Empty.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1856">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/3.7.1/protobuf-java-3.7.1-sources.jar!/com/google/protobuf/Empty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/gateway/GatewayApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="210">
-            <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/proto/message/hello/HelloMessage.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/squareup/retrofit2/retrofit/2.6.0/retrofit-2.6.0.jar!/retrofit2/Retrofit.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/gateway/HttpServerInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/com/example/grpc/server/service/HelloServiceOuterClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/com/example/grpc/server/message/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="1757" column="78" selection-start-line="1757" selection-start-column="78" selection-end-line="1757" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/com/example/grpc/server/message/PersonOrBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/gateway/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/gateway/HttpServerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/gateway/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/gateway/HelloController.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -7,6 +7,7 @@ import io.grpc.ManagedChannelBuilder;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import tensorflow.serving.PredictionServiceGrpc;
 
 @SpringBootApplication
 public class GatewayApplication {
@@ -14,7 +15,7 @@ public class GatewayApplication {
     @Bean
     public ManagedChannel getManagedChannel() {
         return ManagedChannelBuilder
-                .forAddress("localhost", 6565)
+                .forAddress("127.0.0.1", 8500)
                 .usePlaintext()
                 .build();
     }
@@ -24,6 +25,10 @@ public class GatewayApplication {
         return HelloServiceGrpc.newBlockingStub(channel);
     }
 
+    @Bean
+    public PredictionServiceGrpc.PredictionServiceBlockingStub getPredictionServiceBlockingStub(ManagedChannel channel) {
+        return PredictionServiceGrpc.newBlockingStub(channel);
+    }
     public static void main(String[] args) {
         SpringApplication.run(GatewayApplication.class, args);
     }
